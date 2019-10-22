@@ -1,1 +1,3 @@
 # Heatmap
+
+Capture your keystrokes.

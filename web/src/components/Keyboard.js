@@ -25,7 +25,8 @@ export default function Keyboard(props) {
           <KeyboardRow
             key={index}
             row={row}
-            codeCounts={props.codeCounts} />
+            codeCounts={props.codeCounts}
+          />
         ))
       ) : (
         <Typography>

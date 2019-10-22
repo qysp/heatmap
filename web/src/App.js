@@ -33,24 +33,13 @@ export default class App extends React.Component {
         <Title>Heatmap</Title>
         <LayoutSelect
           handleChange={this.handleChange}
-          layout={this.state.layout} />
+          layout={this.state.layout}
+        />
         <Keyboard
           layout={this.state.layout}
-          codeCounts={this.state.codeCounts} />
+          codeCounts={this.state.codeCounts}
+        />
       </Container>
     );
   }
 }
-
-/*
-import Paper from '@material-ui/core/Paper';
-
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: 500,
-  },
-
-  <Paper className={classes.paper}>
-  </Paper>
-*/
