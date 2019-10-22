@@ -1,0 +1,7 @@
+{
+  "short_name": "Heatmap",
+  "name": "Heatmap WebUI",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone"
+}
