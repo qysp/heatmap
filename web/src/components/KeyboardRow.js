@@ -22,7 +22,7 @@ export default function KeyboardRow(props) {
       className={classes.root}
     >
       {props.row.map((key, index) => (
-        <Grid item key={index}>
+        <Grid item key={`${key.code}-${index}`}>
           <KeyboardKey {...key} codeCounts={props.codeCounts} />
         </Grid>
       ))}

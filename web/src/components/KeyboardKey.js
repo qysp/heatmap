@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: 'rgba(0, 0, 0, 0.1) 0px -1px 0px 3px inset, rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;',
     justifyContent: 'center',
     alignItems: 'center',
-    WebkitBoxAlign: 'center',
+    textAlign: 'center',
+    cursor: 'pointer',
   },
 }));
 
@@ -23,6 +24,8 @@ export default function KeyboardKey(props) {
   const classes = useStyles();
   const total = Object.values(props.codeCounts).reduce((acc, cur) => acc + cur, 0);
   const count = props.codeCounts[props.code] || 0;
+
+  const [display, setDisplay] = React.useState(props.display);
 
   return (
     <Paper
@@ -32,9 +35,10 @@ export default function KeyboardKey(props) {
         width: props.width,
         background: `rgba(183, 28, 28, ${(count / total) * 10})`,
       }}
+      onClick={() => setDisplay(typeof display === 'number' ? props.display : count)}
     >
-      <Typography variant="body2">
-        {props.display}
+      <Typography variant="caption">
+        {display}
       </Typography>
     </Paper>
   );

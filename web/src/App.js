@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Title from './components/Title';
 import LayoutSelect from './components/LayoutSelect';
@@ -10,11 +11,11 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      codeCounts: {},
       layout: '',
+      codeCounts: {},
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleLayoutChange = this.handleLayoutChange.bind(this);
   }
 
   componentDidMount() {
@@ -23,16 +24,17 @@ export default class App extends React.Component {
       .then(body => this.setState({ codeCounts: body }));
   }
 
-  handleChange(ev) {
+  handleLayoutChange(ev) {
     this.setState({ layout: ev.target.value });
   }
 
   render() {
     return (
       <Container>
+        <CssBaseline />
         <Title>Heatmap</Title>
         <LayoutSelect
-          handleChange={this.handleChange}
+          handleChange={this.handleLayoutChange}
           layout={this.state.layout}
         />
         <Keyboard

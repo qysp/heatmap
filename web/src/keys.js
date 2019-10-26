@@ -45,7 +45,7 @@ export const layouts = {
       KEY_RIGHTSHIFT: 2.75,
       KEY_LEFTALT: 1.25,
       KEY_RIGHTALT: 1.25,
-      KEY_SPACE: 7.75,
+      KEY_SPACE: 7.15,
       KEY_CAPSLOCK: 1.75,
       KEY_RIGHTCTRL: 1.25,
       KEY_LEFTMETA: 1.25,
@@ -61,7 +61,7 @@ export const layouts = {
       [ 'KEY_LEFTCTRL', 'KEY_LEFTMETA', 'KEY_CAPSLOCK', 'KEY_LEFTALT', 'KEY_LAYER', 'KEY_SPACE', 'KEY_LAYER', 'KEY_BACKSLASH', 'KEY_LEFT', 'KEY_DOWN', 'KEY_RIGHT' ],
     ],
     widths: {
-      KEY_SPACE: 2.25,
+      KEY_SPACE: 2.15,
     },
   },
 };

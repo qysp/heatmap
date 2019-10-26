@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     width: "100%",
   },
-  row: {},
 }));
 
 export default function Keyboard(props) {
