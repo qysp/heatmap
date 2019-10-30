@@ -19,7 +19,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('/heatmap')
+    fetch('/heatmap.log')
       .then(res => res.json())
       .then(body => this.setState({ codeCounts: body }));
   }
